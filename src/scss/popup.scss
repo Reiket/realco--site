@@ -9,6 +9,7 @@ body.lock {
    transition: all .8s linear;
    overflow-y: auto;
    overflow-x: hidden;
+   z-index: 99;
    &.open {
       opacity: 1;
       visibility: visible;

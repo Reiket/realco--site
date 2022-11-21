@@ -839,6 +839,7 @@ body.lock {
   transition: all 0.8s linear;
   overflow-y: auto;
   overflow-x: hidden;
+  z-index: 99;
 }
 .popup__fade.open {
   opacity: 1;
