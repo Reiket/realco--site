@@ -1,0 +1,393 @@
+//====================================================================================================
+.header {
+   // .header__close
+   &__close {
+      position: relative;
+      z-index: 8;
+   }
+}
+.close {
+
+   &._close {
+      display: none;
+   }
+   background: #939878;  
+   // .close__container
+   &__container {
+   }
+   // .close__body
+   &__body {
+      padding: rem(10) 0;
+      display: flex;
+      
+      
+   }
+   // .close__text
+   &__text {
+      font-weight: 400;
+      font-size: rem(14);
+      line-height: math.div(21 , 14);
+      text-align: center;
+      flex: 1 1 auto;
+      color: #fff;
+   }
+   // .close__icon
+   &__icon {
+      cursor: pointer;
+         &::before{
+            color: #fff;
+            font-size: rem(14);
+         }
+   }
+
+}
+.header {
+   @media (max-width:$mobile){
+      min-height: rem(5);
+   }
+   // .header__wrapper
+   &__wrapper {
+      //position: fixed;
+      max-height: rem(74);;
+      //z-index: 50;
+   }
+   // .header__container
+   &__container {
+   }
+   // .header__body
+   &__body {
+      display: flex;
+      margin: rem(25) rem(0);
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+      gap: rem(20);
+
+   }
+   // .header__logo
+   &__logo {
+      position: relative;
+      z-index: 8;
+      img {}
+   }
+   // .header__menu
+   &__menu {
+   }
+}
+.menu {
+   // .menu__body
+   &__body {
+      display: flex;
+      @include adaptiveValue("gap", 24, 5);
+      align-items: center;
+      &._active {
+         .menu__list {
+            left: 0;
+         }
+         &::before {
+            left: 0;
+         }
+      }
+      &::before {
+         content: "";
+         position: fixed;
+         width: 100%;
+         height: 150px;
+         top: 0;
+         left: -100%;
+         transition: left 0.3s ease 0s;
+         background-color: #fff;
+         z-index: 7;
+      }
+   }   
+   // .menu__list
+   &__list {
+      //flex: 1 1 percent(494, 1240);
+      flex-wrap: wrap;
+      @media (min-width:$tablet){
+         display: flex;
+      }
+      @include adaptiveValue("column-gap", 32, 5);
+      @media (max-width:$tablet){
+         position: fixed;
+         width: 100%;
+         height: 100%;
+         overflow: auto;
+         top: 0;
+         left: -100%;
+         transition: left 0.3s ease 0s;
+         padding: rem(150) rem(15) rem(30) rem(15);
+         background-color: #fff;
+         z-index: 6;
+      }
+   }
+   // .menu__item
+   &__item {
+      position: relative;
+      @media (max-width:$tablet){
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         flex-wrap: wrap;
+         margin: 0px rem(3);
+      }
+      &._hover{
+         .menu__sub-list {
+            transform: translate(0px, 0px);
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+         }
+         .menu__arrow {
+            transform: rotate(180deg);
+         }
+         .menu__arrow, .menu__link {
+            color: $mainOrange;
+         }
+      }
+      &._active {
+         .menu__arrow {
+            transform: rotate(180deg);
+         }
+         .menu__arrow, .menu__link {
+            color: $mainOrange;
+         }
+      }
+
+      @media (max-width:$mobile){
+         margin: rem(0) rem(0) rem(15) rem(0);
+         &:last-child{
+            margin-bottom: 0;
+         }
+      }
+      @media (max-width:$tablet){
+         &:not(:last-child) {margin-bottom: 20px;}
+      }
+   }
+   // .menu__link
+   &__link {
+      font-weight: 400;
+      font-size: rem(16);
+      line-height: math.div(24 , 16);
+      color: $mainColor;
+      transition: all 0.3s ease 0s;
+      @media (max-width:$tablet){
+         font-size: rem(25);
+      }
+      @media (any-hover: hover){
+         &:hover{
+            color: $mainOrange;
+         }
+      }
+   }
+   // .menu__arrow
+   &__arrow {
+		transition: all 0.3s ease 0s;
+		font-size: rem(9);
+      width: rem(20);
+      height: rem(20);
+		&.list_active {
+         transform: rotate(-180deg);
+         color: $mainOrange;
+         .menu__arrow, .menu__link {
+            color: $mainOrange;
+         }
+      }
+
+      @media (max-width:$tablet){
+         font-size: rem(15);
+      }
+   }
+   // .menu__sub-list
+   &__sub-list {
+      position: relative;
+      background-color: $mainOrange;
+      padding: rem(15) rem(10);
+      flex: 1 1 100%;
+      z-index: 10;
+      @media (min-width:$tablet){
+         position: fixed;
+      }
+   }
+   // .menu__sub-item
+   &__sub-item {
+      &:not(:last-child) {
+         margin-bottom: rem(5);
+         @media (max-width:$mobile){
+            margin-bottom: rem(10); 
+         }
+      }
+   }
+   // .menu__sub-link
+   &__sub-link {
+      color: #fff;
+      line-height: 120%;
+      font-size: rem(15);
+      @media (any-hover: hover){
+         &:hover{
+            text-decoration: underline;
+         }
+      }
+      @media (max-width:$tablet){
+         font-size: rem(20);
+      }
+   }
+   // .menu__search
+   &__search {
+   }
+   // .menu__button
+   &__button {
+      z-index: 7;
+   }
+}
+
+.item-search {
+   align-items: center;
+   // .item-search__link
+
+   &__link {
+      span {
+         font-family: 'Roboto';
+      }
+      &::before{
+         font-size: rem(15);
+         padding: rem(0) rem(4) rem(0) rem(0);
+         
+      }
+      @media (max-width:$tablet){
+         &::before{
+         font-size: rem(20); 
+         }
+      }
+   }
+}
+
+.button {
+   display: flex;
+   align-items: center;
+   font-size: rem(16);
+   line-height: math.div(24 , 16);
+   min-width: rem(275);
+   @media (max-width: em(570)){
+      margin-top: rem(35);
+      display: flex;
+      flex-direction: column;
+      gap: rem(15);
+      width: 100%;
+   }
+
+   // .button__cart
+   &__cart {
+      span {
+         font-family: 'Roboto';
+      }
+      display: inline-block;
+      height: rem(42);
+      width: 100%;
+      text-align: center;
+      padding-top: rem(10);
+      background: #FFFFFF;
+      border: 1px solid #E7E8E3;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+      border-radius: rem(6);
+      transition: all 0.3s ease 0s;
+      @media (min-width:em(570)){
+         flex: 0 0 rem(100);
+      }
+      &::before{
+         padding: rem(0) rem(4) rem(0) rem(0);
+         
+      }
+      @media (any-hover: hover){
+         &:hover{
+            background: $mainOrange;
+            color: #fff;
+         }
+      }
+   }
+   // .button__find
+   &__find {
+      background: #CF6F49;
+      border: 1px solid #CF6F49;
+      border-radius: 6px;
+      height: rem(42);
+      text-align: center;
+      padding-top: rem(9);
+      width: 100%;
+      @media (min-width:em(570)){
+         margin-left: rem(10);
+      }
+      @media (min-width:em(570)){
+         flex: 0 0 rem(159);
+      }
+      color: #fff;
+      
+      transition: all 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            background: #9e5538;
+            border: 1px solid #9e5538;
+         }
+      }
+   }
+}
+
+
+
+//====================================================================================================
+
+//Burger
+
+.icon-menu {
+   @media (max-width: $tablet) {
+      z-index: 7;
+      display: block;
+      position: relative;
+      width: 40px;   
+      height: 22px;
+      cursor: pointer;
+      span,
+      &::before,
+      &::after {
+         position: absolute;
+         left: 0;
+         height: 10%;
+         width: 100%;
+         transition: all .3s ease-in;
+         background-color: #333;
+      }
+
+      &::before,
+      &::after {
+         content: '';
+      }
+
+      &::before {
+         top: 0;
+      }
+
+      &::after {
+         bottom: 0;
+      }
+
+      span {
+         top: 50%;
+         transform: scale(1) translate(0px, -50%);
+      }
+
+      &._active span {
+         transform: scale(0) translate(0px, -50%);
+      }
+   
+      &._active::before {
+         top: 50%;
+         transform: rotate(-45deg) translate(0px, -50%);
+      }
+   
+      &._active::after {
+         bottom: 50%;
+         transform: rotate(45deg) translate(0px, 50%);
+      }
+   }
+}
+

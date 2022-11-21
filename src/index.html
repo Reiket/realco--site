@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html',{
+"title": "Головна"
+})
+
+<body>
+<div class="wrapper">
+   @@include('html/header.html',{})
+   <div id="popup" class="popup__fade">
+      <div class="popup">
+         <div class="popup__body">
+            <div class="popup__content">
+               <a href="#header" class="popup__close close-popup"></a>
+               <div class="popup__title">Search</div>         
+               <div class="popup__search search-popup">
+                  <form class="search-popup__form">
+                     <input type="search" data-error="Error" placeholder="Enter your request" class="search-popup__input">
+                     <button type="submit" class="search-popup__button">Send</button>
+                  </form>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet sint explicabo commodi eaque blanditiis excepturi placeat. Laboriosam, mollitia? Itaque voluptatum harum consectetur inventore saepe. Necessitatibus adipisci facere perspiciatis id! Consequatur.</p>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet sint explicabo commodi eaque blanditiis excepturi placeat. Laboriosam, mollitia? Itaque voluptatum harum consectetur inventore saepe. Necessitatibus adipisci facere perspiciatis id! Consequatur.</p>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet sint explicabo commodi eaque blanditiis excepturi placeat. Laboriosam, mollitia? Itaque voluptatum harum consectetur inventore saepe. Necessitatibus adipisci facere perspiciatis id! Consequatur.</p>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet sint explicabo commodi eaque blanditiis excepturi placeat. Laboriosam, mollitia? Itaque voluptatum harum consectetur inventore saepe. Necessitatibus adipisci facere perspiciatis id! Consequatur.</p>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet sint explicabo commodi eaque blanditiis excepturi placeat. Laboriosam, mollitia? Itaque voluptatum harum consectetur inventore saepe. Necessitatibus adipisci facere perspiciatis id! Consequatur.</p>   
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+      <div class="page__intro intro">
+         <img src="./img/bg/decor01.png" class="intro__decor intro__decor_1"></img>
+         <div class="intro__container">
+            <div class="intro__body">
+               <div class="intro__button btn">Find your dream place</div>
+               <h2 class="intro__title">Find house for your family in minutes</h2>
+               <div class="intro__text">Aenean sodales mauris quis tellus facilisis, vel mattis magna. Interdum curabitur eget aliquam elit in mauris purus.</div>
+               <div class="intro__content">
+                  <form class="intro__form">
+                     <button type="submit" class="intro__search icon-search"></button>
+                     <input type="search" name="form[email]" data-error="Error" placeholder="Search" class="intro__input">                
+                  </form>
+                  <a href="" type="submit" class="intro__find">Find property</a>
+               </div>   
+            </div>
+         </div>
+         <img src="./img/bg/decor02.png" class="intro__decor intro__decor_2">
+         <div class="intro__image"><img src="./img/bg/bg.png" alt=""></div>
+      </div>
+      <div class="page__media media">
+         <div class="media__container">
+            <div class="media__body">
+               <div class="media__text">As seen on the world's best magazines and media</div>
+               <div class="media__images">
+                  <img src="./img/media/01.png" alt="">
+                  <img src="./img/media/02.png" alt="">
+                  <img src="./img/media/03.png" alt="">
+                  <img src="./img/media/04.png" alt="">
+               </div>
+            </div>
+         </div>
+      </div>  
+      <section class="section">
+         <div class="section__container">
+            <div class="section__body">
+               <div class="section__inner">
+                  <h1 class="section__title">How it works</h1>
+                  <div class="section__text">Nunc laoreet consequat nunc at consequat. Praesent aliquam mi id efficitur pellentesque. Maecenas varius felis felis.</div>
+               </div>
+            </div>   
+            <div class="section__works works">
+               <div class="works__body">
+                  <div class="works__item">                    
+                     <div class="works__images">
+                        <img src="./img/fonts/house.svg" alt="">
+                     </div>             
+                     <h2 class="works__title">Find property</h2>
+                     <div class="works__text">Odales mauris quis tellus facilisis, vel mattis magna interdum. Curabitur eget aliquam elit. In mauris purus, auctor a eleifend non.</div>
+                  </div>
+                  <div class="works__item">
+                     <div class="works__images">
+                        <img src="./img/fonts/receipt.svg" alt="">
+                     </div>
+                     <h2 class="works__title">Make a deal</h2>
+                     <div class="works__text">Pellentesque suscipit mauris. Nam dictum, erat a volutpat varius, urna nisi sollicitudin orci, sagittis facilisis odio tortor ac mi.</div>
+                  </div>
+                  <div class="works__item">
+                     <div class="works__images">
+                        <img src="./img/fonts/key.svg" alt="">
+                     </div>
+                     <h2 class="works__title">Get your keys</h2>
+                     <div class="works__text">Nulla vel bibendum purus. Etiam tempus quam vel pulvinar rutrum. Duis semper, metus vitae fermentum consequat.</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="page__house house">
+         <div class="house__container">
+            <div class="house__body">
+               <div class="house__content">
+                  <div class="house__button btn">Comfort first</div>
+                  <h2 class="house__title">The best houses for family comfort</h2>
+                  <div class="house__text">Ectus ipsum faucibus justo, et semper quam nisl in nibh. Proin sollicitudin, lorem non posuere blandit.</div>
+                  <div class="house__links">
+                     <a href="" class="house__btn">Explore properties</a>
+                     <div class="house__contact">
+                        <div class="house__inner">
+                           <a href="" class="house__link">Contact agent</a>
+                           <button type="text" class="house__arrow icon-arrow"></button>   
+                        </div>    
+                        <ul class="house__sub-contact">
+                           <li class="house__item">
+                              <a href="tel:+999-999-99" class="house__num">+999-999-99</a>
+                           </li>
+                           <li class="house__item">
+                              <a href="tel:+999-999-99" class="house__num">+999-999-99</a>
+                           </li>
+                           <li class="house__item">
+                              <a href="tel:+999-999-99" class="house__num">+999-999-99</a>
+                           </li>
+                        </ul>              
+                     </div>                                    
+                  </div>
+               </div>
+               <div class="house__img">
+                  <img src="./img/house/01.png" alt="">
+               </div>
+            </div>
+            <div class="house__body house__body_2">        
+               <div class="house__content house__content_2">
+                  <div class="house__button btn">Quick and easy</div>
+                  <h2 class="house__title">Fast forward process</h2>
+                  <div class="house__text">Ut vitae nisi eu nisi maximus condimentum ac id purus. Duis sit amet mi arcu praesent nec felis nisl.</div>
+                  <div class="house__block block-house">
+                     <div class="block-house__item">
+                        <div class="block-house__images">
+                           <img src="./img/fonts/payments.svg" alt="">
+                        </div>
+                        <h3 class="block-house__title">Affordable prices</h3>
+                        <div class="block-house__text block-house__text_small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</div>
+                     </div>
+                     <div class="block-house__item">
+                        <div class="block-house__images">
+                           <img src="./img/fonts/description.svg" alt="">
+                        </div>
+                        <h3 class="block-house__title">Less paper work</h3>
+                        <div class="block-house__text">Curabitur porta luctus semper donec eget lobortis leo ac finibus nisi.</div>
+                     </div>
+                  </div>
+                  <div class="house__links">
+                     <a href="" class="house__btn">Explore properties</a>
+                     <div class="house__contact">
+                        <div class="house__inner">
+                           <a href="" class="house__link">Contact agent</a>
+                           <button type="text" class="house__arrow icon-arrow"></button>   
+                        </div>    
+                        <ul class="house__sub-contact">
+                           <li class="house__item">
+                              <a href="tel:+999-999-99" class="house__num">+999-999-99</a>
+                           </li>
+                           <li class="house__item">
+                              <a href="tel:+999-999-99" class="house__num">+999-999-99</a>
+                           </li>
+                           <li class="house__item">
+                              <a href="tel:+999-999-99" class="house__num">+999-999-99</a>
+                           </li>
+                        </ul>              
+                     </div>                                    
+                  </div>
+               </div>
+               <div class="house__img">
+                  <img src="./img/house/02.png" alt="">
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <section class="section-card">
+         <img src="./img/bg/decor01.png" class="section-card__decor section-card__decor_1"></img>
+         <div class="section-card__container">
+            <div class="section-card__body">
+               <div class="section-card__inner">
+                  <div class="section-card__button btn">Properties</div>
+                  <h1 class="section-card__title">Houses in your favorite area</h1>
+               </div>
+            </div> 
+            <div class="card">
+               <div class="card__body">
+                  <div class="card__item">
+                     <a href="" class="card__image"><img src="./img/card/01.png" alt=""></a>
+                     <div class="card__content">
+                        <h2 class="card__title">Cozy studio in Los Angeles</h2>
+                        <div class="card__price">$ 1,200.00 USD</div>
+                        <div class="card__address icon-map"><span>2263 Southlea, Los Angeles</span></div>
+                        <div class="card__info">
+                           <div class="card__bath icon-bathtub"><span>2</span></div>
+                           <div class="card__bed icon-bed"><span>2</span></div>
+                           <div class="card__squere icon-square_foot"><span>840 sqft</span></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card__item">
+                     <a href="" class="card__image"><img src="./img/card/02.png" alt=""></a>
+                     <div class="card__content">
+                        <h2 class="card__title">Tiny home in San Diego</h2>
+                        <div class="card__price">$ 740,000.00 USD</div>
+                        <div class="card__address icon-map"><span>2569 El Segundo, San Diego</span></div>
+                        <div class="card__info">
+                           <div class="card__bath icon-bathtub"><span>1</span></div>
+                           <div class="card__bed icon-bed"><span>2</span></div>
+                           <div class="card__squere icon-square_foot"><span>400 sqft</span></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card__item">
+                     <a href="" class="card__image"><img src="./img/card/03.png" alt=""></a>
+                     <div class="card__content">
+                        <h2 class="card__title">Crown house in New York</h2>
+                        <div class="card__price">$ 980,000.00 USD</div>
+                        <div class="card__address icon-map"><span>4489 Smity Fielda, New York</span></div>
+                        <div class="card__info">
+                           <div class="card__bath icon-bathtub"><span>2</span></div>
+                           <div class="card__bed icon-bed"><span>4</span></div>
+                           <div class="card__squere icon-square_foot"><span>3200 sqft</span></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card__item">
+                     <a href="" class="card__image"><img src="./img/card/04.png" alt=""></a>
+                     <div class="card__content">
+                        <h2 class="card__title">Family house in Los Angeles</h2>
+                        <div class="card__price">$ 4,200.00 USD</div>
+                        <div class="card__address icon-map"><span>4489 Smity Fielda, New York</span></div>
+                        <div class="card__info">
+                           <div class="card__bath icon-bathtub"><span>2</span></div>
+                           <div class="card__bed icon-bed"><span>4</span></div>
+                           <div class="card__squere icon-square_foot"><span>3200 sqft</span></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card__item">
+                     <a href="" class="card__image"><img src="./img/card/05.png" alt=""></a>
+                     <div class="card__content">
+                        <h2 class="card__title">Crown house in New York</h2>
+                        <div class="card__price">$ 820,000.00 USD</div>
+                        <div class="card__address icon-map"><span>2263 Southlea, Los Angeles</span></div>
+                        <div class="card__info">
+                           <div class="card__bath icon-bathtub"><span>2</span></div>
+                           <div class="card__bed icon-bed"><span>4</span></div>
+                           <div class="card__squere icon-square_foot"><span>1440 sqft</span></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card__item">
+                     <a href="" class="card__image"><img src="./img/card/06.png" alt=""></a>
+                     <div class="card__content">
+                        <h2 class="card__title">Crown house in New York</h2>
+                        <div class="card__price">$ 980,000.00 USD</div>
+                        <div class="card__address icon-map"><span>4489 Smity Fielda, New York</span></div>
+                        <div class="card__info">
+                           <div class="card__bath icon-bathtub"><span>2</span></div>
+                           <div class="card__bed icon-bed"><span>4</span></div>
+                           <div class="card__squere icon-square_foot"><span>3200 sqft</span></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="house__links card-link">
+                  <a href="" class="house__btn">Explore properties</a>
+                  <div class="house__contact">
+                     <div class="house__inner">
+                        <a href="" class="house__link">Contact agent</a>
+                        <button type="text" class="house__arrow icon-arrow"></button>   
+                     </div>    
+                     <ul class="house__sub-contact">
+                        <li class="house__item">
+                           <a href="tel:+999-999-99" class="house__num">+999-999-99</a>
+                        </li>
+                        <li class="house__item">
+                           <a href="tel:+999-999-99" class="house__num">+999-999-99</a>
+                        </li>
+                        <li class="house__item">
+                           <a href="tel:+999-999-99" class="house__num">+999-999-99</a>
+                        </li>
+                     </ul>              
+                  </div>                                    
+               </div>
+            </div>
+         </div>
+         <img src="./img/bg/decor02.png" class="section-card__decor section-card__decor_2"></img>
+      </section>      
+      <section class="section section-location">
+         <div class="section__container">
+            <div class="section__body">
+               <div class="section__inner section__inner-location">
+                  <h1 class="section__title">Locations</h1>
+                  <div class="section__text">Nunc mi ante, fringilla eget iaculis et, maximus vel purus integer lacus urna, aliquet non nisl sit amet.</div>
+               </div>
+            </div> 
+            <div class="locations">
+               <div class="locations__body">
+                  <div class="locations__item">
+                     <div class="locations__content">
+                        <h2 class="locations__title">San Francisco, CA</h2>
+                        <div class="locations__wiew icon-arrow"><span>View Properties</span></div>
+                     </div>
+                  </div>
+                  <div class="locations__item">
+                     <div class="locations__content">
+                        <h2 class="locations__title">Los Angeles, CA</h2>
+                        <div class="locations__wiew icon-arrow"><span>View Properties</span></div>
+                     </div>
+                  </div>   
+                  <div class="locations__item">
+                     <div class="locations__content">
+                        <h2 class="locations__title">San Diego, CA</h2>
+                        <div class="locations__wiew icon-arrow"><span>View Properties</span></div>
+                     </div>
+                  </div>   
+                  <div class="locations__item">
+                     <div class="locations__content">
+                        <h2 class="locations__title">New York, NY</h2>
+                        <div class="locations__wiew icon-arrow"><span>View Properties</span></div>
+                     </div>
+                  </div>   
+                  <div class="locations__item">
+                     <div class="locations__content">
+                        <h2 class="locations__title">Las Vegas, NV</h2>
+                        <div class="locations__wiew icon-arrow"><span>View Properties</span></div>
+                     </div>
+                  </div>   
+                  <div class="locations__item">
+                     <div class="locations__content">
+                        <h2 class="locations__title">Miami, FL</h2>
+                        <div class="locations__wiew icon-arrow"><span>View Properties</span></div>
+                     </div>
+                  </div>   
+               </div>
+            </div>
+            <div class="house__links card-link">
+               <a href="" class="house__btn">Explore properties</a>
+               <div class="house__contact">
+                  <div class="house__inner">
+                     <a href="" class="house__link">Contact agent</a>
+                     <button type="text" class="house__arrow icon-arrow"></button>   
+                  </div>    
+                  <ul class="house__sub-contact">
+                     <li class="house__item">
+                        <a href="tel:+999-999-99" class="house__num">+999-999-99</a>
+                     </li>
+                     <li class="house__item">
+                        <a href="tel:+999-999-99" class="house__num">+999-999-99</a>
+                     </li>
+                     <li class="house__item">
+                        <a href="tel:+999-999-99" class="house__num">+999-999-99</a>
+                     </li>
+                  </ul>              
+               </div>                                    
+            </div>
+         </div>
+      </section>   
+      <div class="families">
+         <div class="families__container">
+            <div class="families__body">
+               <div class="families__content">
+                  <div class="families__image">
+                     <img src="./img/fonts/family_restroom.svg" alt="">
+                  </div>
+                  <h2 class="families__title">Families are our priority</h2>
+                  <div class="families__text">Curabitur eget aliquam elit. In mauris purus, auctor a eleifend non, placerat vel arcu. In non consectetur lorem. Morbi non varius sapien suscipit mauri.</div>
+                  <a href="" class="families__button">Get started</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <section class="section">
+         <div class="section__container">
+            <div class="section__body">
+               <div class="section__inner">
+                  <h1 class="section__title">What customers say</h1>
+                  <div class="section__text">Faucibus orci luctus et ultrices posuere cubilia curae.</div>
+               </div>
+            </div>
+            <div class="customers">
+               <div class="customers__body">
+                  <div class="customers__item">
+                     <div class="customers__inner">
+                        <div class="rating rating_set">
+                           <div class="rating__body">
+                              <div class="rating__active"></div>
+                              <div class="rating__items">
+                                 <input type="radio" class="rating__item" value="1" name="rating">
+                                 <input type="radio" class="rating__item" value="2" name="rating">
+                                 <input type="radio" class="rating__item" value="3" name="rating">
+                                 <input type="radio" class="rating__item" value="4" name="rating">
+                                 <input type="radio" class="rating__item" value="5" name="rating">
+                              </div>
+                           </div>
+                           <div class="rating__value">5</div>
+                        </div>
+                        <div class="customers__text">"Aliquam erat volutpat. Nulla pretium nec urna et convallis. Ut varius mi lacus, nec molestie libero ultricies nec. Aenean lacinia dui elit, ut gravida quam."</div>
+                        <div class="customers__info">
+                           <img src="./img/customers/01.png" alt="" class="customers__icon">
+                           <div class="customers__content">
+                              <div class="customers__name">Michael Webb</div>
+                              <div class="customers__prof">Customer</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="customers__item">
+                     <div class="customers__inner">
+                        <div class="rating rating_set">
+                           <div class="rating__body">
+                              <div class="rating__active"></div>
+                              <div class="rating__items">
+                                 <input type="radio" class="rating__item" value="1" name="rating">
+                                 <input type="radio" class="rating__item" value="2" name="rating">
+                                 <input type="radio" class="rating__item" value="3" name="rating">
+                                 <input type="radio" class="rating__item" value="4" name="rating">
+                                 <input type="radio" class="rating__item" value="5" name="rating">
+                              </div>
+                           </div>
+                           <div class="rating__value">5</div>
+                        </div>
+                        <div class="customers__text">"Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi pretium iaculis ultricies. Aenean in leo vitae tortor."</div>
+                        <div class="customers__info">
+                           <img src="./img/customers/02.png" alt="" class="customers__icon">
+                           <div class="customers__content">
+                              <div class="customers__name">Amber Keene</div>
+                              <div class="customers__prof">Customer</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="customers__item">
+                     <div class="customers__inner">
+                        <div class="rating rating_set">
+                           <div class="rating__body">
+                              <div class="rating__active"></div>
+                              <div class="rating__items">
+                                 <input type="radio" class="rating__item" value="1" name="rating">
+                                 <input type="radio" class="rating__item" value="2" name="rating">
+                                 <input type="radio" class="rating__item" value="3" name="rating">
+                                 <input type="radio" class="rating__item" value="4" name="rating">
+                                 <input type="radio" class="rating__item" value="5" name="rating">
+                              </div>
+                           </div>
+                           <div class="rating__value">5</div>
+                        </div>
+                        <div class="customers__text">"Condimentum viverra orci. Pellentesque suscipit odio nisl, non ultricies purus mattis eget. In placerat, lorem a sodales ullamcorper, eros nibh laoreet nisl."</div>
+                        <div class="customers__info">
+                           <img src="./img/customers/03.png" alt="" class="customers__icon">
+                           <div class="customers__content">
+                              <div class="customers__name">Sarah Tarleton</div>
+                              <div class="customers__prof">Customer</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>   
+      </section>
+      <div class="post">
+         <div class="post__container">
+            <div class="post__body">
+               <div class="post__button btn">Blog</div>
+               <h2 class="post__title">Latest posts</h2>
+               <div class="post__content">
+                  <div class="post__text">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Praesent efficitur nibh massa morbi sagittis ornare dui in ornare.</div>
+                  <a href="" class="post__view">View all</a>
+               </div>
+            </div>
+            <div class="post__card card-post">
+               <div class="card-post__body">
+                  <div class="card-post__item">
+                     <a href="" class="card-post__image"><img src="./img/post/01.png" alt=""></a>
+                     <div class="card-post__top">
+                        <div class="card-post__button">Trends</div>
+                        <div class="card-post__date">May 10, 2022</div>
+                     </div>
+                     <div class="card-post__bottom">
+                        <h2 class="card-post__title">The 9 best homes in New York</h2>
+                        <div class="card-post__text">Integer tincidunt rutrum faucibus. Proin sit amet varius arcu. Aliquam vel leo augue donec.</div>
+                        <a href="" class="card-post__more icon-arrow"><span>Read more</span></a>
+                     </div>
+                  </div>
+                  <div class="card-post__item">
+                     <a href="" class="card-post__image"><img src="./img/post/02.png" alt=""></a>
+                     <div class="card-post__top">
+                        <div class="card-post__button">Trends</div>
+                        <div class="card-post__date">May 10, 2022</div>
+                     </div>
+                     <div class="card-post__bottom">
+                        <h2 class="card-post__title">The 9 best homes in New York</h2>
+                        <div class="card-post__text">Integer tincidunt rutrum faucibus. Proin sit amet varius arcu. Aliquam vel leo augue donec.</div>
+                        <a href="" class="card-post__more icon-arrow"><span>Read more</span></a>
+                     </div>
+                  </div>
+                  <div class="card-post__item">
+                     <a href="" class="card-post__image"><img src="./img/post/03.png" alt=""></a>
+                     <div class="card-post__top">
+                        <div class="card-post__button">Trends</div>
+                        <div class="card-post__date">May 10, 2022</div>
+                     </div>
+                     <div class="card-post__bottom">
+                        <h2 class="card-post__title">The 9 best homes in New York</h2>
+                        <div class="card-post__text">Integer tincidunt rutrum faucibus. Proin sit amet varius arcu. Aliquam vel leo augue donec.</div>
+                        <a href="" class="card-post__more icon-arrow"><span>Read more</span></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   @@include('html/footer.html',{})
+</div>
+   <script src="js/app.min.js"></script>
+
+</body>
+
+</html>

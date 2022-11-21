@@ -1,0 +1,139 @@
+/*Popup*/
+body.lock {
+   overflow: hidden;
+}
+
+.popup__fade {
+   opacity: 0;
+   visibility: hidden;
+   transition: all .8s linear;
+   overflow-y: auto;
+   overflow-x: hidden;
+   &.open {
+      opacity: 1;
+      visibility: visible;
+   }
+   &::before{
+      content:'';
+      background: #000;
+      position: fixed; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%;
+      opacity: 0.7;
+      z-index: 9999;
+   }
+}
+
+
+.popup__area {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+}
+
+.popup {
+   position: fixed;
+	top: 35%;
+	left: 50%;
+	padding: 20px;
+	width: rem(350);
+	margin-left: -200px;	
+	background: #fff;
+	z-index: 99999;
+	opacity: 1;	
+   @media (max-width: em(500)){
+      left: 56%;
+   }
+   @media (max-width: em(375)){
+      width: rem(310);
+      left: 62%;
+   }
+   @media (max-width: em(340)){
+      left: 64%;
+   }
+   &__body {
+      padding: 30px 10px;
+   }
+   &__content {
+      font-size: 15px;
+      color: #000; 
+   }
+   &__title {
+      font-weight: 700;
+      font-size: 20px;
+   }
+   &__close {
+      position: absolute;
+      right: 17px;
+      top: 17px;
+      width: 25px;
+      height: 25px;
+      opacity: 0.3;
+      transition: all .1s ease-in;
+      @media (any-hover: hover){
+         &:hover{
+            opacity: 1;
+         }
+      }
+      &::before, &::after{
+         position: absolute;
+         left: 15px;
+         content: ' ';
+         height: 25px;
+         width: 2px;
+         background-color: #333;
+      }
+      &::before{
+         transform: rotate(45deg);
+      }
+      &::after{
+         transform: rotate(-45deg);
+      }
+   }   
+}
+
+.search-popup {
+   padding-top: rem(30);
+   // .search-popup__form
+   &__form {
+      display: flex;
+   }
+   // .search-popup__input
+   &__input {
+      background-color: rgb(250, 245, 245);
+      border: 1px solid #333;
+      border-radius: rem(5);
+      padding: rem(0) rem(0) rem(0) rem(8);
+      outline: 0;
+      outline-offset: 0;
+      @media (min-width: em(375)){
+         padding: rem(15) rem(20) rem(15) rem(20);
+      }
+   }
+   &__button {
+      display: block;
+      background: #CF6F49;
+      border: 1px solid #CF6F49;
+      border-radius: 6px;
+      margin-left: rem(16);
+      color: #fff;
+      padding: rem(9) rem(21);
+      transition: all 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            background: #9e5538;
+            border: 1px solid #9e5538;
+         }
+      }
+      @media (max-width: em(375)){
+         margin-left: rem(10);
+      }
+   }
+}
+
+
+
